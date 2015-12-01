@@ -5,7 +5,6 @@
 
  <table class="table table-striped">
      <thead>
-
      <tr>
          <td>#</td>
          <td>Data</td>
