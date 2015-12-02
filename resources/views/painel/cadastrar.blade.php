@@ -20,15 +20,15 @@
          <textarea class="form-control" name="proximaatividade" id="proximaatividade" cols="30" rows="10"></textarea>
      </div>
 
-     <div class="form-group">
+     {{--<div class="form-group">--}}
 
-         <label for="avaliacao">Avaliação </label>
-     <input id="avaliacao" type="radio" checked="checked" name="avaliacao" value="0" />
-     <span>Aprovado</span>
-     <input id="avaliacao" type="radio" name="avaliacao" value="1" />
-     <span>Refazer</span>
+         {{--<label for="avaliacao">Avaliação </label>--}}
+     {{--<input id="avaliacao" type="radio" checked="checked" name="avaliacao" value="0" />--}}
+     {{--<span>Aprovado</span>--}}
+     {{--<input id="avaliacao" type="radio" name="avaliacao" value="1" />--}}
+     {{--<span>Refazer</span>--}}
 
-     </div>
+     {{--</div>--}}
 
      <button type="submit" class="btn btn-default">Enviar</button>
  </form>

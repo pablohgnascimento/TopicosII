@@ -9,34 +9,34 @@
      {{--colocar o nome com o mesmo nome do campo--}}
 
      <div class="form-group">
-         {!! Form::label('data', 'Data') !!}
-         {!! Form::text('data', null, ['class' => 'form-control alert-info']) !!}
+         {{--{!! Form::label('data', 'Data') !!}--}}
+         {{--{!! Form::data('data', null, ['class' => 'form-control alert-warning']) !!}--}}
          {{--<label for="data">data</label>--}}
          {{--<input type="date" class="form-control" id="data" name="data" placeholder="data">--}}
      </div>
 
      <div class="form-group">
          {!! Form::label('atividadedesenvolvida', 'Atividade Desenvolvida') !!}
-         {!! Form::textarea('atividadedesenvolvida', null, ['class' => 'form-control alert-info']) !!}
+         {!! Form::textarea('atividadedesenvolvida', null, ['class' => 'form-control alert-warning']) !!}
 
          {{--<label for="atividadedesenvolvida">Atividade Desenvolvida</label>--}}
          {{--<textarea class="form-control" name="atividadedesenvolvida" id="atividadedesenvolvida" cols="30" rows="10"></textarea>--}}
 
      <div class="form-group">
          {!! Form::label('proximaatividade', 'Proxima Atividade') !!}
-         {!! Form::textarea('proximaatividade', null, ['class' => 'form-control alert-info']) !!}
+         {!! Form::textarea('proximaatividade', null, ['class' => 'form-control alert-warning']) !!}
 
          {{--<label for="proximaatividade">Proxima Atividade</label>--}}
          {{--<textarea class="form-control" name="proximaatividade" id="proximaatividade" cols="30" rows="10"></textarea>--}}
      </div>
 
-     <div class="form-group">
+     {{--<div class="form-group">--}}
 
-         <label for="avaliacao">Avaliação:  </label>
-         {!! Form::label('avaliacao', 'Aprovado') !!}
-         {!! Form::radio('avaliacao', 0) !!}
-         {!! Form::label('avaliacao', 'Refazer') !!}
-         {!! Form::radio('avaliacao', 1) !!}
+         {{--<label for="avaliacao">Avaliação:  </label>--}}
+         {{--{!! Form::label('avaliacao', 'Aprovado') !!}--}}
+         {{--{!! Form::radio('avaliacao', 0) !!}--}}
+         {{--{!! Form::label('avaliacao', 'Refazer') !!}--}}
+         {{--{!! Form::radio('avaliacao', 1) !!}--}}
 
 
      {{--<input id="avaliacao" type="radio" checked="checked" name="avaliacao" value="0" />--}}
@@ -44,7 +44,7 @@
      {{--<input id="avaliacao" type="radio" name="avaliacao" value="1" />--}}
      {{--<span>Refazer</span>--}}
 
-     </div>
+     {{--</div>--}}
 
      <button type="submit" class="btn btn-default">Enviar</button>
  </form>
