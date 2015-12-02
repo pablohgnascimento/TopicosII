@@ -4,5 +4,11 @@
     <data-source name="SQLite -" uuid="7561a04d-5694-4c7c-ba7c-fb5a3f99471d">
       <secret-storage>master_key</secret-storage>
     </data-source>
+    <data-source name="MySQL - topicosII@localhost" uuid="6963db6e-966d-405f-a795-320780ec1b64">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>topicosII.*</schema-pattern>
+      <default-schemas>topicosII.*</default-schemas>
+    </data-source>
   </component>
 </project>

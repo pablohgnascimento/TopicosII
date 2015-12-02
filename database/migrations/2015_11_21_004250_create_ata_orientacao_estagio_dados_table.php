@@ -17,7 +17,7 @@ class CreateAtaOrientacaoEstagioDadosTable extends Migration
             $table->date('data');
             $table->string('atividadedesenvolvida', 255);
             $table->string('proximaatividade', 255);
-            $table->boolean('avaliacao');
+            $table->string('status', 15) ->default('revisar');
             $table->string('usuario', 50);
             $table->timestamps();
         });

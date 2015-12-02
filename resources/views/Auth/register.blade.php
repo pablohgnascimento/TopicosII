@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Produtos</title>
+    <title>Ata de Orientação de Estagio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -56,6 +56,25 @@
                         <input type="email" name="email" value="{{ old('email') }}" class="form-control">
                     </div>
 
+                </div>
+
+                <div class="form-group">
+                    <label for="ra" class="control-label col-sm-2">RA</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="ra" value="{{ old('ra') }}" class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="control-label col-sm-2">Orientador</label>
+                    <div class="col-sm-10">
+                        <select name="" id="" class="form-control">
+                            @foreach($orientador as $orientadores)
+                                <option value="">{!! $orientadores !!}</option>
+                            @endforeach
+                        </select>
+                    </div>
                 </div>
 
                 <div class="form-group">

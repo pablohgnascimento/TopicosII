@@ -15,11 +15,10 @@ class AtaOrientacaoEstagioDados extends Model
         'proximaatividade',
         'avaliacao',
         'usuario'
-
     ];
 
 
-    public function getDataAttribute ($date)
+    public function getCreatedAtAttribute ($date)
     {
         return Carbon::parse ($date)->format('d/m/Y');
     }
