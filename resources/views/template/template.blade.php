@@ -9,10 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Produtos</title>
+    <title>Ata de Orientação de Estágio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/justified-nav.css" rel="stylesheet">
 
 
 </head>
