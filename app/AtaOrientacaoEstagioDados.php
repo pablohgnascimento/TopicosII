@@ -14,7 +14,8 @@ class AtaOrientacaoEstagioDados extends Model
         'atividadedesenvolvida',
         'proximaatividade',
         'avaliacao',
-        'usuario'
+        'usuario',
+        'orientador'
     ];
 
 

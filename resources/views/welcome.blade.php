@@ -178,7 +178,7 @@
         <tfoot>
         <tr>
             <td colspan="2">
-                <a target="_blank" href="http://www.tccmonografiaseartigos.com.br/tcc-monografias-artigos-cientificos"><h6>Fonte: http://www.tccmonografiaseartigos.com.br/tcc-monografias-artigos-cientificos </h6></a>
+                <a target="_blank" href="http://www.fatec.edu.br/html/fatecam/index.php?option=com_content&view=article&id=553"><h6>Fonte: http://www.tccmonografiaseartigos.com.br/tcc-monografias-artigos-cientificos </h6></a>
             </td>
         </tr>
         </tfoot>

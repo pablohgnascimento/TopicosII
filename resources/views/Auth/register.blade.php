@@ -69,13 +69,20 @@
                 <div class="form-group">
                     <label for="password" class="control-label col-sm-2">Orientador</label>
                     <div class="col-sm-10">
-                        <select name="" id="" class="form-control">
-                            @foreach($orientador as $orientadores)
-                                <option value="">{!! $orientadores !!}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
+                        {{--<select name="orientador" id="" class="form-control">--}}
+                            {{--@foreach($orientador as $orientadores)--}}
+
+                                {!! Form::select('orientador',$orientador, null,['class' => 'form-control']) !!}
+
+                                {{--<option value="">{!! $orientadores !!}</option>--}}
+
+                            </div>
+
+                            {{--@endforeach--}}
+                        {{--</select>--}}
+                        </div>
+
+
 
                 <div class="form-group">
                     <label for="password" class="control-label col-sm-2">Password</label>
@@ -103,6 +110,8 @@
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-success">Registrar</button>
                 </div>
+        </div>
+        </div>
 
 
 

@@ -64,7 +64,7 @@
                          <ul class="dropdown-menu">
                              <li>
                                  <a href="/ata-orientacao-estagio/enviar/{!! $dado->id !!}?situacao=2" >
-                                     <span class="glyphicon glyphicon-edit" aria-hidden="true"> {!! $btnEditar !!} </span>
+                                     <span class="glyphicon glyphicon-edit" aria-hidden="true"> Devolverr </span>
                                  </a>
                              </li>
                              <li role="separator" class="divider"></li>

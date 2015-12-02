@@ -39,7 +39,7 @@ class AtaOrientacaoEstagioController extends Controller
 
         if (Auth::user()->tipo === 'orientador'){
             $campoorientador = 'orientador';
-            $usuario     = Auth::user()->email;
+            //$usuario     = Auth::user()->email;
 //            $btnEditar   = 'Revisar';
 //             = 'orientador';
         }
@@ -84,6 +84,8 @@ class AtaOrientacaoEstagioController extends Controller
 
         $ata=new AtaOrientacaoEstagioDados($dados);
         $ata->usuario = Auth::user()->email;
+        $ata->orientador = Auth::user()->orientador;
+//        $ata->ra = Auth::user()->ra;
 //        $ata->data = $data;//Carbon::createFromFormat('Y-m-d', $dados->data);
 //        dd($ata);
 
@@ -93,6 +95,7 @@ class AtaOrientacaoEstagioController extends Controller
 
         return redirect('/ata-orientacao-estagio/');
     }
+
 
     public function getEditar($id)
     {
