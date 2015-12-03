@@ -47,6 +47,25 @@
      {{--</div>--}}
 
      <button type="submit" class="btn btn-default">Enviar</button>
+
+
  </form>
+
+{{--         {!! dd($mensagem) !!}--}}
+         <hr>
+         <div class="panel-danger">
+             <div class="panel-heading">Observações do Orientador</div>
+             <div class="panel-body">
+    @foreach($mensagem as $mensagens)
+    <div class="panel-default">
+        <div class="panel-heading">Mensagem Dia {!! $mensagens->created_at !!}</div>
+        <div class="panel-body">
+            {!! $mensagens->mensagem !!}
+
+    </div>
+        </div>
+    @endforeach
+             </div>
+         </div>
 
 @endsection

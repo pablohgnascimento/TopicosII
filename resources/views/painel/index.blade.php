@@ -63,10 +63,17 @@
                          </button>
                          <ul class="dropdown-menu">
                              <li>
-                                 <a href="/ata-orientacao-estagio/enviar/{!! $dado->id !!}?situacao=2" >
-                                     <span class="glyphicon glyphicon-edit" aria-hidden="true"> Devolverr </span>
-                                 </a>
+                                 {{--<a href="/ata-orientacao-estagio/enviar/{!! $dado->id !!}?situacao=2" >--}}
+                                     {{--<span class="glyphicon glyphicon-edit" aria-hidden="true"> Devolverr </span>--}}
+                                 {{--</a>--}}
+
+                                 @if($dado->status !== 'revisar')
+                                 <button type="button" class="" data-toggle="modal" data-target="#modalMensagem">
+                                    <span class="glyphicon glyphicon-zoom-in"></span> Devolver
+                                 </button>
+                                 @endif
                              </li>
+
                              <li role="separator" class="divider"></li>
                              <li>
                                  <a href="/ata-orientacao-estagio/enviar/{!! $dado->id !!}?situacao=0" >
@@ -90,7 +97,7 @@
              </a>
          </td>
      </tr>
-
+     @include('painel.mensagem',['id' =>$dado->id])
          @endforeach
      </tbody>
  </table>
@@ -108,4 +115,5 @@
  @endif
 
  {{--@include('painel.show')--}}
+
 @endsection
