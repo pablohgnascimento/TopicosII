@@ -68,9 +68,13 @@
                                  {{--</a>--}}
 
                                  @if($dado->status !== 'revisar')
-                                 <button type="button" class="" data-toggle="modal" data-target="#modalMensagem">
-                                    <span class="glyphicon glyphicon-zoom-in"></span> Devolver
-                                 </button>
+                                 {{--<button type="button" class="" data-toggle="modal" data-target="#modalMensagem">--}}
+                                    {{--<span class="glyphicon glyphicon-zoom-in"></span> Devolveeer--}}
+                                 {{--</button>--}}
+
+                                         <a href="/ata-orientacao-estagio/mensagem/{!! $dado->id !!}">
+                                             <span class="glyphicon glyphicon-zoom-in"></span> Devolver
+                                         </a>
                                  @endif
                              </li>
 
@@ -97,7 +101,7 @@
              </a>
          </td>
      </tr>
-     @include('painel.mensagem',['id' =>$dado->id])
+
          @endforeach
      </tbody>
  </table>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\AtaOrientacaoEstagioDados;
 use App\MensagemDados;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -241,7 +242,17 @@ class AtaOrientacaoEstagioController extends Controller
         return $pdf->stream($title.'.pdf');
     }
 
-    public function postIndex()
+    public function getMensagem($id)
+    {
+        $ata = AtaOrientacaoEstagioDados::find($id);
+
+        $usuario = User::where('email', $ata->usuario)->lists('name')->shift("");
+        //dd($usuario);
+
+        return view('painel.mensagem', compact('ata', 'usuario'));
+    }
+
+    public function postMensagem($id)
     {
         $dadosFormulario = Input::except('_token');
 
@@ -249,13 +260,13 @@ class AtaOrientacaoEstagioController extends Controller
         MensagemDados::create($dadosFormulario);
 
         $id = Input::get('id_ata');
-dd($id);
+
         $ata = AtaOrientacaoEstagioDados::find($id);
 
         $ata->status = 'revisar';//$status;
         $ata->save();
 
-        return redirect()->back();
+        return redirect('ata-orientacao-estagio/');
     }
 
 

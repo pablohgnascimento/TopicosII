@@ -78,6 +78,20 @@
                     </div>
                 </div>
 
+        //Colocar o campo para Ano/Semestre
+                {{--<div class="form-group">--}}
+                    {{--<label for="password" class="control-label col-sm-2">Ano/Semestre</label>--}}
+                    {{--<div class="col-sm-10">--}}
+                        {{--<select name="" id="" class="form-control">--}}
+                            {{--@foreach($orientador as $orientadores)--}}
+                                {{--<option value="">{!! $orientadores !!}</option>--}}
+                            {{--@endforeach--}}
+                        {{--</select>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+
+
+
                 <div class="form-group">
                     <label for="password" class="control-label col-sm-2">Password</label>
                     <div class="col-sm-10">
